@@ -1,0 +1,26 @@
+select.icon-menu option {
+background-repeat:no-repeat;
+background-position:bottom left;
+padding-left:30px;
+}
+select#countries option[value="US"] {
+background-image:url(pic01.jpg);
+}
+select#countries option[value="IN"] {
+background-image:url(flags/india.png);
+}
+select#countries option[value="UK"] {
+background-image:url(flags/england.png);
+}
+select#countries option[value="FR"] {
+background-image:url(flags/france.png);
+}
+select#countries option[value="GE"] {
+background-image:url(flags/germany.png);
+}
+select#countries option[value="CA"] {
+background-image:url(flags/canada.png);
+}
+select#countries option[value="RU"] {
+background-image:url(flags/russia.png);
+}

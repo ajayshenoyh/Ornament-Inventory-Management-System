@@ -1,0 +1,59 @@
+<!DOCTYPE html >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Venktaraman temple,Mulki</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+<link href="css/default1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts1.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+body  {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+}
+</style>
+</head>
+
+<script language="javascript" type="text/javascript">
+    function call(){
+       var name = prompt('Enter the correct festival name ,Incorrect input page refreshes', '');
+       window.location.replace("festreport.jsp?name="+name);
+    }
+</script>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="index.html" accesskey="1" title="">Home</a></li>
+		
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Report Printing:</h2>
+			
+			<span class="byline">Services</span>
+		</div>
+		<ul class="actions">
+			<li><a href="lendreport.jsp" class="button">LEND REPORT </a></li>
+			<li><a href="repairreport.jsp" class="button">REPAIR REPORT</a></li>
+			<li><a href="missingitem.jsp" class="button">MISSING ITEM REPORT</a></li>
+			<li><a href="itemreport.jsp" class="button">ITEM REPORT</a></li>
+			<li><a href="logreport.jsp" class="button">HISTORY</a></li>
+			<li><a href="shelfreport.jsp" class="button">SHELF REPORT</a></li>
+			<li><a onclick="call()" class="button">FESTIVAL LISTVIEW </a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

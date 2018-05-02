@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+ body {
+    background-image: url("images/bgnoise_lg.png");
+}
+#t12 {
+    width:425px;
+    height:170px;
+}
+#r
+{
+position: absolute;
+    left: 560px;
+    top: 670px;
+    z-index: 1;
+}
+#b
+{
+position: absolute;
+    left: 782px;
+    top: 670px;
+    z-index: 1;
+}
+#d
+{
+position: absolute;
+    left: 560px;
+    top: 760px;
+    z-index: 1;
+}
+#e
+{
+position: absolute;
+    left: 782px;
+    top: 760px;
+    z-index: 1;
+    
+}
+#h
+{
+position: absolute;
+    left: 560px;
+    top: 850px;
+    z-index: 1;
+}
+#c
+{
+position: absolute;
+    left: 782px;
+     top: 850px;
+    z-index: 1;
+}
+#p
+{
+position: absolute;
+    left: 560px;
+    top: 940px;
+    z-index: 1;
+}
+#cr
+{
+position: absolute;
+    left: 782px;
+    top: 940px;
+    z-index: 1;
+}
+#y
+{
+position: relative;
+    left: 97px;
+    top: 405px;
+    z-index: 1;
+}
+
+#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9
+{
+position:relative ;
+  
+    top: -10px;
+    z-index: 1;
+}
+</style>
+<title>Venktaraman temple,Mulki</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="css/stylem.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/demom.css" media="all" />
+</head>
+<script language="javascript" type="text/javascript">
+function loadContent(str)
+{
+
+	var str= document.getElementById('name').value;
+	var strdon= document.getElementById('doname').value;
+	var strdond= document.getElementById('dondu').value;
+	var strs= document.getElementById('shelf').value;
+	
+	var str1=document.getElementById('bm').value;
+	var str2= document.getElementById('colour').value;
+	var str3=document.getElementById('weight').value;
+	var str5=document.getElementById('price').value;
+	var str6= document.getElementById('q1').value;
+	var str7=document.getElementById('q2').value;
+	var str8= document.getElementById('q3').value;
+	var str9=document.getElementById('q4').value;
+	var str10=document.getElementById('q5').value;
+	var str11= document.getElementById('q6').value;
+	var str12=document.getElementById('q7').value;
+	var str13= document.getElementById('q8').value;
+	var str14=document.getElementById('q9').value;
+	var str15= document.getElementById('s').value;
+	var str16=document.getElementById('t12').value;
+	var str17=document.getElementById('fi').value;
+
+ xmlhttp=GetXmlHttpObject();
+
+  if (xmlhttp==null)
+  {
+   alert ("Your browser does not support Ajax HTTP");
+   return;
+  }
+  else
+	  {
+    var url="iteminsert-1.jsp";
+    url=url+"?a="+str+"&b="+str1+"&c="+str2+"&d="+str3+"&f="+str5+"&g="+str6+"&h="+str7+"&i="+str8+"&j="+str9+"&k="+str10+"&l="+str11+"&m="+str12+"&n="+str13+"&o="+str14+"&p="+str15+"&q="+str16+"&r="+str17+"&dn="+strdon+"&dd="+strdond+"&sh="+strs;
+
+    xmlhttp.onreadystatechange=getOutput;
+    xmlhttp.open("GET",url,true);
+    xmlhttp.send(null);
+	  }
+}
+
+function getOutput()
+{
+  if (xmlhttp.readyState==4)
+  {
+	
+alert(xmlhttp.responseText);
+window.location="item.htm";
+  
+  }
+  
+}
+function GetXmlHttpObject()
+{
+    if (window.XMLHttpRequest)
+    {
+       return new XMLHttpRequest();
+    }
+    if (window.ActiveXObject)
+    {
+      return new ActiveXObject("Microsoft.XMLHTTP");
+    }
+ return null;
+}
+
+</script>
+<body>
+<div class="container">
+			<!-- freshdesignweb top bar -->
+            <div class="freshdesignweb-top">                
+                <div class="clr"></div>
+            </div><!--/ freshdesignweb top bar -->
+			<header>
+				<h1><u>SRI VENKATARAMAN TEMPLE</u><span>MULKI</span></h1>
+				<h1><u><a href="index.html" accesskey="1" title="">Home </u></a></h1>
+            </header>       
+      <div  class="form">
+    		<!--  <form id="contactform" name="contactform" method="post" action="iteminsert-1.jsp"> -->
+
+    			<p class="contact"><label for="name">NAME(ಹೆಸರು)</label></p> 
+    			<input id="name" name="name" placeholder="name" required="" tabindex="1" type="text"> 
+    			<p class="contact"><label for="name">Donated By</label></p> 
+    			<input id="doname" name="name" placeholder="Doners name" required="" tabindex="1" type="text"> 
+    			<p class="contact"><label for="name">Donated During</label></p> 
+    			<input id="dondu" name="name" placeholder="Ex:Teru" required="" tabindex="1" type="text"> 
+
+<fieldset>    			
+<label>BASE METAL</label> 
+    			<select class="select-style gender" id="bm" name="basemetal">
+            <option value="g">GOLD</option>
+            <option value="s">SILVER</option>
+            <option value="p">PLATINUM</option>
+            <option value="o">OTHER</option>
+            </select><br><br>
+</fieldset>
+
+<p class="contact"><label for="name">COLOUR</label></p> 
+    			<input id="colour" name="colour" placeholder="" required="" tabindex="1" type="text"> 
+
+<p class="contact"><label for="name">WEIGHT</label></p> 
+    			<input id="weight" name="weight" placeholder="in grams" required="" tabindex="1" type="text"> 
+
+
+<p class="contact"><label for="name">PRICE</label></p> 
+<input id="price" name="price" placeholder="Rs" required="" tabindex="1" type="text"> 
+
+
+<font id="r" size="3">Ruby</font>
+<font id="b"  size="3">Blues</font>
+<font id="d"  size="3">Diamond</font>
+<font id="e"  size="3">Emerald</font>
+<font id="h"  size="3">Hessonite</font>
+<font id="c"  size="3">Cateye</font>
+<font id="p" size="3">Pearl</font>
+<font id="cr" size="3">Red Coral</font>
+<font id="y" size="3">yellowsapphire</font>
+
+<p class="contact"><label for="name">PEARLS</label></p> 
+<label>
+  <!--  <input type="radio" id="ruby"  name="ruby" onClick="pp1()"  />-->
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ruby.jpg">
+  <input id="q1" name="p1" type="text" style="width:75px;" placeholder="Ruby count" tabindex="1" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <!--<input type="radio" name="blue" value="big" />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/blues.jpg">
+   <input id="q2" name="p2" type="text" style="width:75px;" placeholder="Blues count" tabindex="1" >
+   <br>
+  <!--<input type="radio"  name="diamond" value="big"  />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Diamond.jpg">
+   <input id="q3" name="p3" type="text" style="width:75px;" placeholder="Diamond count" tabindex="1" >
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ <!--<input type="radio" name="emerald" value="big" />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/emerald.jpg">
+   <input id="q4" name="p4" type="text" style="width:75px;" placeholder="Emerald count" tabindex="1">
+  <br>
+  <!--<input type="radio" name="hessonite" value="big" />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/hessonite.jpg">
+   <input id="q5" name="p5" type="text" style="width:75px;" placeholder="Hessonite count" tabindex="1">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <!--<input type="radio" name="cateye" value="big" />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/cateye.jpg">
+   <input id="q6" name="p6" type="text" style="width:75px;" placeholder="cateye count" tabindex="1">
+  <br>
+  <!--<input type="radio"  name="pearl" value="big" />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/pearl.jpg">
+   <input id="q7" name="p7" type="text" style="width:75px;" placeholder="Pearl count" tabindex="1">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <!--<input type="radio"  name="redcoral" value="big" />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Redcoral.jpg">
+   <input id="q8" name="p8" type="text" style="width:75px;" placeholder="RedCoral count" tabindex="1">
+  <br>
+    <!--<input type="radio"  name="pearl" value="big" onClick='var p9= prompt("Count of YellowSaphhire")' />-->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/yellowsapphire.jpg">
+   <input id="q9" name="p9" type="text" style="width:75px;" placeholder="yellowsapphire count" tabindex="1">
+</label>
+<br>
+
+<!--  <input id="pearls" name="pearls" placeholder="" required="" tabindex="1" type="text"> 
+-->
+                
+<fieldset >    			
+<label>STATUS :</label> 
+<select id="s" class="select-style gender" name="status" style="width: 375px">
+
+            <option value="a">AVAILABLE</option>
+            <option value="na">UNAVAILABLE</option>
+            </select><br><br>
+</fieldset>
+<p class="contact"><label for="name">SHELF Details</label></p> 
+    			<input id="shelf" name="shelf" placeholder="Shelf No" required="" tabindex="1" type="text"> 
+
+<p class="contact"<label for="textarea"><label>DESCRIPTION</label></p>
+<textarea id="t12" name="textarea"></textarea> 
+
+
+                        <p class><label for="file">Photo</label></p>
+                        <div class="contact">
+                            <span style="-moz-user-select: none;" class="filename">Please select file</span>
+                            <span style="-moz-user-select: none;" class="action">Upload</span>
+                          <input type="file" name="file" id="fi" >
+                        </div>
+
+
+                           <input class="buttom" name="submit" id="submit" tabindex="5" value="Insert" type="submit" onclick="loadContent('hi')"> 	 
+                           
+   
+</div>      
+</div>
+
+</body>
+</html>
+

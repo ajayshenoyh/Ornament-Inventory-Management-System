@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Venktaraman temple,Mulki</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="css/stylem.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/demom.css" media="all" />
+	 <link rel="stylesheet" type="text/css" href="css/itemstyle.css" media="all" />
+	   <link rel="stylesheet" type="text/css" href="css/stylemm.css" media="all" />
+	 <script type="text/javascript" src="jss/jquery-1.4.2.min.js"></script>
+	<script src="jss/jquery.autocomplete.js"></script>
+	</head>
+<style>body {
+    background-image: url("images/bgnoise_lg.png");
+}</style>
+<body>
+<div class="container">
+			<header>
+				<h1><u>SRI VENKATARAMAN TEMPLE</u><span>MULKI</span></h1>
+				<h1>Repaired Item</h1>
+            </header>       
+            
+             <script>
+	 jQuery(function(){
+			$("#name").autocomplete("list.jsp");
+			
+		});
+	 jQuery(function(){
+		 $("#lid").autocomplete("list1.jsp");
+			
+		});
+            </script>
+            
+    <div  class="form">
+    		<form id="contactform" method="post" action="changes1.jsp"> 
+
+    			<p class="contact"><label for="name">NAME</label></p> 
+    			<input id="name" name="name" placeholder="name" required="" tabindex="1" type="text"> 
+ <input class="buttom" name="submit" id="submit" tabindex="5" value="Search By Name" type="submit"> 
+ <br>	
+
+ </form> 
+    		<form id="contactform" method="get" action="changes2.jsp"> 		
+	<p class="contact"><label for="name">ID</label></p> 
+    			<input id="id" name="id" placeholder="id" required="" tabindex="1" type="text"> 
+
+ <input class="buttom" name="submit" id="submit" tabindex="5" value="Search By Id" type="submit"> 	
+ </form>     
+ </body>
+</html>
